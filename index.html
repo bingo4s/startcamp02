@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="개발자 이상은 소개">
+  <title>이상은 | HOME</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Pretendard','sans-serif']},colors:{primary:'#2563eb'}}}}</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-[#fcfcfc] font-sans text-slate-900 antialiased">
+  <button data-theme-toggle aria-pressed="false" class="fixed bottom-6 right-6 z-40 rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-bold shadow-lg transition hover:-translate-y-1 hover:border-primary hover:text-primary" title="색상 모드 전환">◐ <span data-theme-label>다크 모드</span></button>
+  <nav class="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-lg" aria-label="주요 메뉴">
+    <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 lg:px-8">
+      <a href="index.html" class="text-2xl font-extrabold tracking-tighter"><span class="text-primary">I AM</span>.</a>
+      <div class="hidden items-center gap-10 md:flex">
+        <a href="index.html" aria-current="page" class="border-b-2 border-primary py-2 text-sm font-bold text-primary">HOME</a>
+        <a href="goals.html" class="py-2 text-sm font-bold text-slate-600 transition hover:text-primary">목표</a>
+        <a href="experience.html" class="py-2 text-sm font-bold text-slate-600 transition hover:text-primary">경험</a>
+      </div>
+      <button data-menu-button aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기" class="rounded-lg p-2 md:hidden"><span class="block h-0.5 w-6 bg-current"></span><span class="mt-1.5 block h-0.5 w-6 bg-current"></span><span class="mt-1.5 block h-0.5 w-6 bg-current"></span></button>
+    </div>
+    <div id="mobile-menu" data-mobile-menu class="hidden border-t border-slate-200 bg-white px-6 py-4 md:hidden">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3"><a href="index.html" aria-current="page" class="font-bold text-primary">HOME</a><a href="goals.html" class="font-semibold">목표</a><a href="experience.html" class="font-semibold">경험</a></div>
+    </div>
+
+    
+  </nav>
+  <main class="page-enter mx-auto max-w-6xl px-6 pb-20 pt-36 lg:px-8">
+    <section class="grid min-h-[70vh] items-center gap-14 md:grid-cols-[1.1fr_.9fr]">
+      <div><p class="mb-4 font-bold text-primary">HELLO, I AM</p><h1 class="text-5xl font-black leading-tight tracking-tight sm:text-7xl">이상은<span class="text-primary">.</span></h1><p class="mt-6 max-w-xl text-xl leading-relaxed text-slate-600">새로운 관점으로 문제를 바라보고, 기술을 통해 더 나은 해결 방법을 만드는 개발자를 꿈꿉니다.</p><a href="goals.html" class="mt-9 inline-flex rounded-full bg-slate-900 px-7 py-3.5 font-bold text-white transition hover:-translate-y-1 hover:bg-primary">나의 목표 보기 →</a></div>
+      <article class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/60 sm:p-10"><p class="mb-7 text-sm font-extrabold tracking-[.25em] text-primary">PROFILE</p><dl class="space-y-6"><div class="flex justify-between gap-6 border-b border-slate-100 pb-4"><dt class="text-slate-500">이름</dt><dd class="font-bold">이상은</dd></div><div class="flex justify-between gap-6 border-b border-slate-100 pb-4"><dt class="text-slate-500">나이</dt><dd class="font-bold">25세</dd></div><div class="flex justify-between gap-6 border-b border-slate-100 pb-4"><dt class="text-slate-500">주소</dt><dd class="font-bold">서울특별시 서대문구</dd></div><div class="flex justify-between gap-6"><dt class="text-slate-500">취미</dt><dd class="text-right font-bold">펜싱</dd></div></dl></article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

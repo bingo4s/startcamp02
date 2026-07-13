@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="개발자로서의 목표와 SSAFY에서 얻고 싶은 것"
+  >
+
+  <title>이상은 | 목표</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Pretendard", "sans-serif"]
+          },
+          colors: {
+            primary: "#2563eb"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="min-h-screen bg-[#fcfcfc] font-sans text-slate-900 antialiased">
+
+  <button
+    data-theme-toggle
+    aria-pressed="false"
+    class="fixed bottom-6 right-6 z-40 rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-bold shadow-lg transition hover:-translate-y-1 hover:border-primary hover:text-primary"
+    title="색상 모드 전환"
+  >
+    ◐
+    <span data-theme-label>다크 모드</span>
+  </button>
+
+  <nav
+    class="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-lg"
+    aria-label="주요 메뉴"
+  >
+    <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 lg:px-8">
+
+      <a
+        href="index.html"
+        class="text-2xl font-extrabold tracking-tighter"
+      >
+        <span class="text-primary">I AM</span>.
+      </a>
+
+      <div class="hidden items-center gap-10 md:flex">
+        <a
+          href="index.html"
+          class="py-2 text-sm font-bold text-slate-600 transition hover:text-primary"
+        >
+          HOME
+        </a>
+
+        <a
+          href="goals.html"
+          aria-current="page"
+          class="border-b-2 border-primary py-2 text-sm font-bold text-primary"
+        >
+          목표
+        </a>
+
+        <a
+          href="experience.html"
+          class="py-2 text-sm font-bold text-slate-600 transition hover:text-primary"
+        >
+          경험
+        </a>
+      </div>
+
+      <button
+        data-menu-button
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="메뉴 열기"
+        class="rounded-lg p-2 md:hidden"
+      >
+        <span class="block h-0.5 w-6 bg-current"></span>
+        <span class="mt-1.5 block h-0.5 w-6 bg-current"></span>
+        <span class="mt-1.5 block h-0.5 w-6 bg-current"></span>
+      </button>
+    </div>
+
+    <div
+      id="mobile-menu"
+      data-mobile-menu
+      class="hidden border-t border-slate-200 bg-white px-6 py-4 md:hidden"
+    >
+      <div class="mx-auto flex max-w-6xl flex-col gap-3">
+        <a
+          href="index.html"
+          class="font-semibold"
+        >
+          HOME
+        </a>
+
+        <a
+          href="goals.html"
+          aria-current="page"
+          class="font-bold text-primary"
+        >
+          목표
+        </a>
+
+        <a
+          href="experience.html"
+          class="font-semibold"
+        >
+          경험
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-enter mx-auto max-w-6xl px-6 pb-24 pt-36 lg:px-8">
+
+    <header class="mb-16 max-w-3xl">
+      <p class="mb-3 font-bold tracking-widest text-primary">
+        MY DIRECTION
+      </p>
+
+      <h1 class="text-4xl font-black tracking-tight sm:text-6xl">
+        문제를 발견하고, 해결로 연결하는 개발자
+      </h1>
+
+      <p class="mt-6 text-lg leading-relaxed text-slate-600">
+        새로운 관점으로 문제를 바라보고,
+        배운 기술을 실제 해결책으로 연결하는 개발자로 성장하고 싶습니다.
+      </p>
+    </header>
+
+    <section class="grid gap-8 md:grid-cols-2">
+
+      <article class="rounded-[2rem] bg-slate-900 p-9 text-white sm:p-12">
+        <span class="text-sm font-bold text-blue-300">
+          01 · DEVELOPER
+        </span>
+
+        <h2 class="mt-5 text-3xl font-bold">
+          개발자로서의 목표
+        </h2>
+
+        <p class="mt-6 leading-8 text-slate-300">
+          연구 중심의 프로젝트를 수행하며 새로운 관점으로 문제를 분석하고,
+          해결 방법을 탐색하는 경험을 쌓아왔습니다.
+          앞으로는 이러한 경험을 실제 서비스와 실무 환경에 적용해,
+          사용자가 겪는 문제를 직접 해결하는 개발자로 성장하고 싶습니다.
+        </p>
+      </article>
+
+      <article class="rounded-[2rem] border border-blue-100 bg-blue-50 p-9 sm:p-12">
+        <span class="text-sm font-bold text-primary">
+          02 · SSAFY
+        </span>
+
+        <h2 class="mt-5 text-3xl font-bold">
+          SSAFY를 통해 얻고 싶은 것
+        </h2>
+
+        <p class="mt-6 leading-8 text-slate-600">
+          체계적인 알고리즘 학습을 통해 문제 해결 능력을 강화하고,
+          Java와 백엔드 개발 지식을 쌓아 실제 서비스를 구현하는 경험을 하고 싶습니다.
+          또한 다양한 팀 프로젝트에서 요구사항 분석부터 설계, 구현, 개선까지 경험하며,
+          팀원들과 의견을 나누고 역할을 조율하는 협업 능력과
+          실제 문제를 해결할 수 있는 실무 개발 역량을 기르고 싶습니다.
+        </p>
+      </article>
+
+    </section>
+
+    <div class="mt-12 flex justify-end">
+      <a
+        href="experience.html"
+        class="font-bold text-primary hover:underline"
+      >
+        경험과 역량 살펴보기 →
+      </a>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
